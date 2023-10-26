@@ -86,6 +86,8 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 form label {
