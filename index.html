@@ -35,12 +35,18 @@
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
         <form>
-          <label for="location">Location</label>
-          <input id="location" type="text" name="location" />
-          <label for="arrive">Arrive</label>
-          <input id="arrive" type="text" name="arrive" />
-          <label for="depart">Depart</label>
-          <input id="depart" type="text" name="depart" />
+          <div>
+            <label for="location">Location</label>
+            <input id="location" type="text" name="location" placeholder="Search destination">
+          </div>
+          <div>
+            <label for="arrive">Arrive</label>
+            <input id="arrive" type="date" name="arrive" />
+          </div>
+          <div>
+            <label for="depart">Depart</label>
+            <input id="depart" type="date" name="depart" />
+          </div>
           <div>
           <label for="type">Type</label>
           <select name="types" id="types" size="1">
@@ -53,6 +59,7 @@
             <option value="yurt">Yurt</option>
           </select>
           </div>
+          <button type="submit">Search</button>
         </form>
       </section>
 
