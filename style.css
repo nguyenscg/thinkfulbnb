@@ -22,7 +22,7 @@ p {
 }
 
 section {
-  padding: 30px;
+  padding: 20px;
 }
 
 section.alternate-background {
@@ -32,7 +32,6 @@ section.alternate-background {
 
 main img {
   width: 100%;
-  margin-bottom: 20px;
 }
 
 /* ---  Groups & Items --- */
@@ -89,9 +88,6 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 
@@ -102,7 +98,7 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 65%;
+  width: 180px;
 }
 
 form button {
@@ -111,6 +107,22 @@ form button {
   color: #fff;
   font-size: 24px;
   padding: 15px;
+  width: 100%;
+}
+
+ol#menu{
+  display: flex;
+  justify-content: center;
+}
+
+
+form div {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+img{
   width: 100%;
 }
 
@@ -127,54 +139,72 @@ footer p {
   padding: 20px;
 }
 
-@media all and (min-width: 600px) {
-  header {
-    background-color: #ff385c;
+/* -------  Media Query ------- */
+@media all and (min-width: 768px) {
+  header{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-  }
-
-  header nav {
-    padding: 10px;
-  }
-
-  form {
-    flex-direction: row;
-  }
-
-  .group {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-flow: row nowrap;
     align-items: center;
   }
 
-  .vacation-form .item {
-    display: flex block;
-    flex: 1 1 auto;
+  form div {
     flex-direction: column;
+    width: 15%;
   }
 
-  .item label
-  , .item input
-  , .item select
-  , .item button{
+  form{
     display: flex;
-    width: 100%
+    gap: 10px;
+    justify-content: space-between;
   }
 
-  .grid-column {
+  form button {
+    width: 20%;
+  }
+
+  form div input, form div select {
+    width: 95%;
+    font-size: 90%;
+  }
+
+  .row{
     display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .row img {
+    width: 25%;
+    margin-right: 10px; 
+  }
+
+  .row p {
+    width: 50%;
+  }
+
+  #ideas>div{
+    display: flex;
+    gap: 10px;
+  }
+
+  #ideas>div>div{
     flex: 1;
-    flex-direction: column;
-    margin: 10px;
+    width: 50%;
   }
 
-  .grid-row {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
+  #ideas img{
+    height: 400px;
   }
+
+  #host{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #host div, #host img{
+    width: 50%;
+  }
+
+
 }
