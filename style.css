@@ -51,6 +51,14 @@ main img {
   flex: 2;
 }
 
+.item label
+, .item input
+, .item select
+, .item button{
+  display: flex;
+  width: 100%
+}
+
 /* -------  Navigation ------- */
 
 header {
