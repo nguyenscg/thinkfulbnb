@@ -31,7 +31,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 25%;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -54,10 +54,8 @@ main img {
 
 header {
   background-color: #ff385c;
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 5px 20px;
   text-align: center;
-  display: flex;
-  justify-content: space-between;
 }
 
 .logo {
@@ -86,8 +84,6 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
-  display: flex;
-  justify-content: space-between;
 }
 
 
@@ -110,27 +106,27 @@ form button {
   width: 100%;
 }
 
-/* -------  About  -------- */
+/* -------  About  --------
 #about {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-/* -------  Ideas ------- */
+/* -------  Ideas -------
 #ideas {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-}
+} */
 
 /* -------  Host ------- */
 #host {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 /* -------  Footer ------- */
@@ -146,10 +142,17 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-@media all and (min-width: 800px) {
-  p {
-    font-size: 24px;
+
+/* ------- DEsktop -----------
+@media all and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
   }
+} */
+
+@media all and (min-width: 800px) {
   section,
   h1 {
     padding: 0 10%;
@@ -157,5 +160,13 @@ footer p {
 
   .group {
     flex-direction: row;
+  }
+  header {
+    background-color: #ff385c;
+    padding: 20px 20px 0 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
