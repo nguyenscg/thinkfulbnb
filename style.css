@@ -51,13 +51,6 @@ main img {
   flex: 2;
 }
 
-.item label
-, .item input
-, .item select
-, .item button{
-  display: flex;
-  width: 100%
-}
 
 /* -------  Navigation ------- */
 
@@ -73,9 +66,12 @@ header {
   color: #fff;
 }
 
+header nav ul {
+  display: flex;
+  justify-content: center;
+}
 header nav ul li {
   list-style-type: none;
-  display: inline;
 }
 
 header nav ul li a {
@@ -93,6 +89,9 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 
@@ -103,7 +102,7 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 65%;
 }
 
 form button {
@@ -115,28 +114,6 @@ form button {
   width: 100%;
 }
 
-/* -------  About  --------
-#about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-/* -------  Ideas -------
-#ideas {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-} */
-
-/* -------  Host ------- */
-#host {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
 
 /* -------  Footer ------- */
 
@@ -150,32 +127,54 @@ footer p {
   padding: 20px;
 }
 
-/* -------  Media Query ------- */
-
-/* ------- DEsktop -----------
-@media all and (min-width: 768px) {
+@media all and (min-width: 600px) {
   header {
+    background-color: #ff385c;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 0 30px;
   }
-} */
 
-@media all and (min-width: 800px) {
-  section,
-  h1 {
-    padding: 0 10%;
+  header nav {
+    padding: 10px;
+  }
+
+  form {
+    flex-direction: row;
   }
 
   .group {
-    flex-direction: row;
-  }
-  header {
-    background-color: #ff385c;
-    padding: 20px 20px 0 20px;
-    text-align: center;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: row nowrap;
     align-items: center;
+  }
+
+  .vacation-form .item {
+    display: flex block;
+    flex: 1 1 auto;
+    flex-direction: column;
+  }
+
+  .item label
+  , .item input
+  , .item select
+  , .item button{
+    display: flex;
+    width: 100%
+  }
+
+  .grid-column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .grid-row {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
   }
 }
