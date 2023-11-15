@@ -22,7 +22,7 @@ p {
 }
 
 section {
-  padding: 20px;
+  padding: 30px;
 }
 
 section.alternate-background {
@@ -32,6 +32,7 @@ section.alternate-background {
 
 main img {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 /* ---  Groups & Items --- */
